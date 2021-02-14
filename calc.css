@@ -1,0 +1,110 @@
+.body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.num-btn {
+  background-color: rgb(220, 220, 220);
+  cursor: pointer;
+  border: 0px;
+  height: 100px;
+  width: 100px;
+  border: 0.5px solid black;
+  font-size: 25px;
+  text-decoration-color: white;
+}
+
+.func-btn {
+  background-color: orange;
+  cursor: pointer;
+  border: 0px;
+  height: 100px;
+  width: 100px;
+  border: 0.5px solid black;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.no9 {
+  grid-area: n9;
+}
+.no8 {
+  grid-area: n8;
+}
+.no7 {
+  grid-area: n7;
+}
+.no6 {
+  grid-area: n6;
+}
+.no5 {
+  grid-area: n5;
+}
+.no4 {
+  grid-area: n4;
+}
+.no3 {
+  grid-area: n3;
+}
+.no2 {
+  grid-area: n2;
+}
+.no1 {
+  grid-area: n1;
+}
+.no0 {
+  grid-area: n0;
+  width: 200px;
+}
+.ndot {
+  grid-area: dot;
+}
+
+.add {
+  grid-area: add;
+}
+.multiply {
+  grid-area: multiply;
+}
+.divide {
+  grid-area: divide;
+}
+.substract {
+  grid-area: substract;
+}
+.all-clear {
+  grid-area: all-clear;
+}
+.invert {
+  grid-area: invert;
+}
+.equals {
+  grid-area: equals;
+}
+.percent {
+  grid-area: percent;
+}
+.display {
+  grid-area: display;
+}
+
+.container {
+  background-color: black;
+  position: absolute;
+  display: grid;
+  width: 400px;
+  height: 650px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "display display display display"
+    "all-clear invert percent divide"
+    "n7 n8 n9 multiply"
+    "n4 n5 n6 substract"
+    "n1 n2 n3 add"
+    "n0 n0 dot equals";
+  column-gap: 0px;
+}
