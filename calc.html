@@ -8,27 +8,27 @@
   </head>
   <body>
     <div class="container">
-      <div id="display" class="diplay"></div>
-      <button id="0" class="num-btn no0">0</button>
-      <button id="1" class="num-btn no1">1</button>
-      <button id="2" class="num-btn no2">2</button>
-      <button id="3" class="num-btn no3">3</button>
-      <button id="4" class="num-btn no4">4</button>
-      <button id="5" class="num-btn no5">5</button>
-      <button id="6" class="num-btn no6">6</button>
-      <button id="7" class="num-btn no7">7</button>
-      <button id="8" class="num-btn no8">8</button>
-      <button id="9" class="num-btn no9">9</button>
-      <button id="." class="num-btn ndot">.</button>
+      <div id="display" class="display"><h1>0</h1></div>
+      <button id="0" onclick="press(this.id)" class="num-btn no0">0</button>
+      <button id="1" onclick="press(this.id)" class="num-btn no1">1</button>
+      <button id="2" onclick="press(this.id)" class="num-btn no2">2</button>
+      <button id="3" onclick="press(this.id)" class="num-btn no3">3</button>
+      <button id="4" onclick="press(this.id)" class="num-btn no4">4</button>
+      <button id="5" onclick="press(this.id)" class="num-btn no5">5</button>
+      <button id="6" onclick="press(this.id)" class="num-btn no6">6</button>
+      <button id="7" onclick="press(this.id)" class="num-btn no7">7</button>
+      <button id="8" onclick="press(this.id)" class="num-btn no8">8</button>
+      <button id="9" onclick="press(this.id)" class="num-btn no9">9</button>
+      <button id="." onclick="press(this.id)" class="num-btn ndot">.</button>
 
-      <button id="add" class="func-btn add">+</button>
-      <button id="substract" class="func-btn substract">-</button>
-      <button id="multiply" class="func-btn multiply">x</button>
-      <button id="divide" class="func-btn divide">/</button>
-      <button id="all-clear" class="func-btn all-clear">AC</button>
-      <button id="invert" class="func-btn invert">+/-</button>
-      <button id="equals" class="func-btn equals">=</button>
-      <button id="percent" class="func-btn percent">%</button>
+      <button id="add"        onclick="binary_operation(this.id)" class="func-btn add">+</button>
+      <button id="substract"  onclick="binary_operation(this.id)" class="func-btn substract">-</button>
+      <button id="multiply"   onclick="binary_operation(this.id)" class="func-btn multiply">x</button>
+      <button id="divide"     onclick="binary_operation(this.id)" class="func-btn divide">/</button>
+      <button id="all-clear"  onclick="all_clear()" class="func-btn all-clear">AC</button>
+      <button id="invert"     onclick="invert()" class="func-btn invert">+/-</button>
+      <button id="equals"     onclick="equals()" class="func-btn equals">=</button>
+      <button id="percent"    onclick="percent()" class="func-btn percent">%</button>
     </div>
   </body>
   <script src="calc.js"></script>
