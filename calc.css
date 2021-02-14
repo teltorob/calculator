@@ -28,6 +28,13 @@
   font-weight: 100;
 }
 
+.func-btn:focus
+{
+  background-color: white;
+  color: orange;
+
+}
+
 button:focus {
   outline: 0;
 }

@@ -8,10 +8,12 @@ var second_number=0;
 
 function press(value)
 {
-    
+    if (display_string.length<10)
+    {
     display_string+=value;
     display.innerText=display_string;
     display_number=parseFloat(display_string );
+    }
 }
 
 function binary_operation(type)
