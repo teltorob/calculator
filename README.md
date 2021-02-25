@@ -1,2 +1,2 @@
 # calculator
-//This is a test
+This is my first repository on github. It is a simple calculator.
